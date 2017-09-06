@@ -19,7 +19,7 @@ public class NewTest {
 	  
 	  driver.get(baseUrl);
 	  String t = driver.getTitle();
-	  assertEquals(t, "CelFar");
+	  assertEquals(t, "HTML");
   }
   @BeforeClass
   public void beforeClass() {

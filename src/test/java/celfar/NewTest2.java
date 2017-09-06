@@ -16,7 +16,7 @@ public class NewTest2 {
 	public String baseUrl;
 	
   @Test
-  public void f() {
+  public void c() {
 	  
 	  driver.get(baseUrl);
 	  driver.findElement(By.id("input")).sendKeys("10");
@@ -25,6 +25,29 @@ public class NewTest2 {
 	  assertEquals(out, "50");
 	  
   }
+  
+  @Test
+  public void c2() {
+	  
+	  driver.get(baseUrl);
+	  driver.findElement(By.id("input")).sendKeys("0");
+	  driver.findElement(By.className("button")).click();
+	  String out = driver.findElement(By.id("output")).getText();
+	  assertEquals(out, "32");
+	  
+  }
+  
+  @Test
+  public void c3() {
+	  
+	  driver.get(baseUrl);
+	  driver.findElement(By.id("input")).sendKeys("-10");
+	  driver.findElement(By.className("button")).click();
+	  String out = driver.findElement(By.id("output")).getText();
+	  assertEquals(out, "14");
+	  
+  }
+  
   @BeforeClass
   public void beforeClass() {
 	  

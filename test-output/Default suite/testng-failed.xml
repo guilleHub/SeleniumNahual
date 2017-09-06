@@ -3,18 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="celfar.NewTest">
-        <methods>
-          <include name="afterClass"/>
-          <include name="f"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- celfar.NewTest -->
       <class name="celfar.NewTest2">
         <methods>
+          <include name="c3"/>
           <include name="beforeClass"/>
-          <include name="f"/>
           <include name="afterClass"/>
+          <include name="c2"/>
         </methods>
       </class> <!-- celfar.NewTest2 -->
     </classes>
